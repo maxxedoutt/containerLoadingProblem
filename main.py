@@ -65,7 +65,7 @@ for istep in range(nsteps):
 	if isteps < nsteps - 1:
 		sort(TNew)
 		reduceSet(TNew)
-	#Should BFree be updated here? I think it should. Not explicitly mentioned in the paper though
+	#Should BFree be updated here? I think it should or maybe not. Not explicitly mentioned in the paper though
 	#If Bfree is not updated, then the next step will be exactly the same as this one. Makes no sense
 	for tower in TNew:
 		'''
